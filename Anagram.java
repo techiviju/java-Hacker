@@ -12,9 +12,53 @@
 	//KEEP -> PEEK
 
 	//TABLE - >BLEAT
+/* Hacker rank Solution 
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String a = sc.next();
+        String b = sc.next();
+
+        boolean isAnagram = true;
+
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+
+        int[] al = new int[256];
+
+        // Increment counts for characters in string a
+        for (char c : a.toCharArray()) {
+            int index = (int) c;
+            al[index]++;
+        }
+
+        // Decrement counts for characters in string b
+        for (char c : b.toCharArray()) {
+            int index = (int) c;
+            al[index]--;
+        }
+
+        // Check if counts are zero for both strings
+        for (int i = 0; i < 256; i++) {
+            if (al[i] != 0) {
+                isAnagram = false;
+                break;
+            }
+        }
+
+        if (isAnagram) {
+            System.out.println("Anagrams");
+        } else {
+            System.out.println("Not Anagrams");
+        }
+    }
+}
 
 
-
+*/
 import java.util.Scanner;
 public class Anagram
 {
